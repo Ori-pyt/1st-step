@@ -42,3 +42,65 @@ elif k >n:
 else:
     print(1)'''
 
+# While
+'''
+number = 23
+running = True
+while running:
+    guess = int(input('Введите целое число : '))
+    if guess == number:
+        print('Поздравляю, вы угадали.')
+        running = False # это останавливает цикл while
+    elif guess < number:
+        print('Нет, загаданное число немного больше этого')
+    else:
+        print('Нет, загаданное число немного меньше этого.')
+else:
+    print('Цикл while закончен.')
+# Здесь можете выполнить всё что вам ещё нужно
+print('Завершение.')'''
+
+# Chess board
+'''
+print('Координаты первой клетки:')
+a1 = int(input())
+a2 = int(input())
+print('Координаты второй клетки:')
+b1 = int(input())
+b2 = int(input())
+if ((a1+a2)%2 == 0 and (b1+b2)%2 == 0) or ((a1+a2)%2 != 0 and (b1+b2)%2 != 0):
+    print('YES')
+else:
+    print('NO')
+print('end')'''
+'''
+m = int(input('Борт1 '))
+n = int(input('Борт2 '))
+x = int(input('Расстояние от более длинного борта:')) # Расстояние от более длинного борта
+y = int(input('Расстояние от более короткого борта:')) # Расстояние от более короткой
+if m > n :
+    x1 = n - x
+    y1 = m - y
+else:
+    x1 = m - x
+    y1 = n - y
+    
+if x1 < x:
+    m = x1
+else:
+    m = x
+if y1 < y:
+    n = y1
+else:
+    n = y
+if n < m:
+    print(n)
+else:
+    print(m)'''
+
+
+# For, while
+a = int(input())
+b = int(input())
+for i in range(a - (a + 1) % 2, b - b % 2, -2):
+    print(i, end=' ')
